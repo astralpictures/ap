@@ -1,12 +1,11 @@
 import * as React from "react";
-import Header from '../components/Header';
+import PageLayout from "../components/PageLayout";
 
-const IndexPage = () => {
+const GalleryPage = () => {
   return (
-    <>
-      <Header />
-    </>
-  )
+    <PageLayout>
+
+    </PageLayout>);
 };
 
-export default IndexPage;
+export default GalleryPage;
