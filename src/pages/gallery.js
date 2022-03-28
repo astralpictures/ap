@@ -12,8 +12,8 @@ const
     GalleryPage = () => {
         return (
             <PageLayout>
-                <Gallery images />
+                <Gallery images={images} />
             </PageLayout>);
     };
 
-export default IndexPage;
+export default GalleryPage;

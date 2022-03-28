@@ -6,7 +6,7 @@ import Header from './Header';
 
 const
     PageLayout = ({children}) => (
-        <Box>
+        <Box minH="100vh">
             <Header />
             <Content>
                 {children}

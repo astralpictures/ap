@@ -1,23 +1,21 @@
 import React from 'react';
-import {Box, Link, SimpleGrid, Text} from '@chakra-ui/react';
+import {Box, Center, HStack, Link} from '@chakra-ui/react';
+import {pages} from '../urls';
 import Logo from './Logo';
 
 const 
     Header = () => (
-        <Box>
-            <Logo />
-            <Box bg="brand.100">
-                <Text fontSize="6xl" color="brand.400">Testing</Text>
-            </Box>
-            <Box bg="brand.200">
-                <Text fontSize="6xl" color="brand.400">Testing</Text>
-            </Box>
-            <Box bg="brand.300">
-                <Text fontSize="6xl" color="brand.100">Testing</Text>
-            </Box>
-            <Box bg="brand.400">
-                <Text fontSize="6xl" color="brand.100">Testing</Text>
-            </Box>
+        <Box bg="brand.100" width="100%" minHeight={50} p={3}>
+            <HStack spacing="2em">
+                <Logo />
+                {pages.map(
+                    page => (
+                        page.nav ? 
+                        <Center key={page.url}>
+                            <Link color="white" href={page.url}>{page.name}</Link>
+                        </Center> :
+                        null))}
+            </HStack>
         </Box>);
 
 export default Header;

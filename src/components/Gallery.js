@@ -5,6 +5,7 @@ const
     Gallery = ({images}) => (
         images.map(image => (
             <Image
+                key={image.src}
                 src={image.src}
                 alt={image.alt} />
         )));
