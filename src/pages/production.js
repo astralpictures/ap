@@ -2,11 +2,11 @@ import * as React from "react";
 import PageLayout from "../components/PageLayout";
 
 const 
-    EquipmentPage = () => {
+    ProductionPage = () => {
         return (
             <PageLayout>
-                
+
             </PageLayout>);
     };
 
-export default EquipmentPage;
+export default ProductionPage;

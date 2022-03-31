@@ -5,7 +5,7 @@ const
     EquipmentPage = () => {
         return (
             <PageLayout>
-                
+                            
             </PageLayout>);
     };
 
