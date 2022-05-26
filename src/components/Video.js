@@ -13,7 +13,7 @@ import {
     useDisclosure} from '@chakra-ui/react';
 
 const
-    Video = ({src, width, ratio, title, poster}) => {
+    Video = ({src, width, ratio, title, poster, description}) => {
         const {isOpen, onOpen, onClose} = useDisclosure();
 
         return (
@@ -31,7 +31,10 @@ const
                     <ModalContent>
                         <ModalHeader>{title}</ModalHeader>
                         <ModalCloseButton />
-                        <ModalBody>
+                        <ModalBody pb={5}>
+                            <Box pb={3}>
+                                {description}
+                            </Box>
                             <AspectRatio maxW={width} ratio={ratio}>
                                 <iframe 
                                     title={title}
