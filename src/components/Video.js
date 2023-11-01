@@ -25,6 +25,7 @@ const
                         src={poster}
                         alt={`${title} video`}
                         fallback={`Watch ${title}`} />
+                    {title}
                 </Box>
                 <Modal isOpen={isOpen} onClose={onClose}>
                     <ModalOverlay />
