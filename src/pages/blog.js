@@ -3,13 +3,13 @@ import {Text} from '@chakra-ui/react';
 import PageLayout from "../components/PageLayout";
 
 const 
-    AboutPage = () => {
+    BlogPage = () => {
         return (
             <PageLayout>
                 <Text>
-                    Coming soon.
+                    Coming Soon.
                 </Text>
             </PageLayout>);
     };
 
-export default AboutPage;
+export default BlogPage;
